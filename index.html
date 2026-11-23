@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>航站楼广播自适应噪声补偿处理器</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <h1>航站楼广播噪声补偿处理器</h1>
+    <div id="header-controls" class="controls"></div>
+  </header>
+  <main>
+    <section>
+      <h2>实时监视</h2>
+      <div id="panel-monitor"></div>
+    </section>
+    <section>
+      <h2>增益曲线</h2>
+      <div id="panel-gain"></div>
+    </section>
+    <section>
+      <h2>扬声器分区配置</h2>
+      <div id="panel-zones"></div>
+    </section>
+    <section>
+      <h2>播出记录</h2>
+      <div id="panel-log"></div>
+    </section>
+  </main>
+  <footer>
+    电平约定:0 dBFS ≈ 94 dB SPL。演示语音为合成伪语音,正式部署时替换为 TTS / 寻呼话筒音源。
+  </footer>
+  <script type="module" src="./dist/src/ui/main.js"></script>
+</body>
+</html>

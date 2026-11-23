@@ -1,0 +1,16 @@
+{
+  "name": "pa-noise-compensator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "机场航站楼广播自适应噪声补偿处理器(AudioWorklet DSP + TypeScript 界面)",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node dist/test/verify.js",
+    "start": "node server.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "5.9"
+  }
+}
